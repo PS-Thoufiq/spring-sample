@@ -15,7 +15,7 @@ public class StudentCrudIntegrationTest {
     @BeforeAll
     static void setup() {
         // You can override this with -Dapi.baseUri=http://your-qa-server:8080
-        String baseUri = "http://localhost:8082";
+        String baseUri = "http://localhost:8081";
         RestAssured.baseURI = baseUri;
     }
 
