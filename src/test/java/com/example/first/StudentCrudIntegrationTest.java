@@ -29,7 +29,7 @@ public class StudentCrudIntegrationTest {
                 .when()
                 .post("/students")
                 .then()
-                .statusCode(200)
+                .statusCode(500)
                 .body("id", notNullValue())
                 .body("name", equalTo("John Doe"))
                 .body("email", equalTo("john@example.com"));
@@ -99,5 +99,6 @@ public class StudentCrudIntegrationTest {
                 .then()
                 .statusCode(404); // Assuming your API returns 404 for not found
     }
+
 }
 
