@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/Thoufiq26/spring.git', branch: 'main'
+                git url: 'https://github.com/PS-Thoufiq/spring-sample.git', branch: 'main'
             }
         }
         stage('Create Log Directory') {
