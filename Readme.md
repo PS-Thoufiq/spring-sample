@@ -6,3 +6,6 @@ mvn clean package -DskipTests
 
 To run integration tests
 mvn test
+
+to run specific test file --
+mvn -Dtest=IntegrationTestCases test
